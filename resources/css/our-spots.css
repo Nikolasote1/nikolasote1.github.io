@@ -1,0 +1,154 @@
+.content-section {
+  flex-direction: column;
+  margin: 0 2vw;
+  margin-bottom: 25px;
+}
+
+.heading {
+  color: #000000;
+  text-align: center;
+}
+
+.spot-container {
+  flex-basis: 100%;
+  margin-top: 5vh;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.spot-container:hover {
+  color: #000000;
+  box-shadow: 0 0 10px rgba(68, 68, 68, 0.4);
+  transform: scale(1.005);
+  transition: all 0.4s ease 0s;
+}
+
+.spot-details {
+  flex-basis: 100%;
+}
+
+.img-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: none;
+  flex-basis: 100%;
+}
+
+
+.img-container-slides {
+  padding: 20px;
+  flex-basis: 100%;
+  overflow: hidden;
+}
+
+
+img {
+  object-fit: contain;
+  min-height: 100%;
+  max-width: 100%;
+}
+
+.spot-meta-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 50%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.meta-text {
+  color: black;
+  text-align: center;
+  font-family: Teko;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+.rectangle {
+  display: flex;
+  color: #000000;
+  align-items: center;
+  justify-content: center;
+  background-color: #3cc900;
+  border-radius: 5px;
+  width: 110px;
+  height: 30px;
+  box-shadow: 0 0 5px rgba(68, 68, 68, 0.25);
+  font-family: Teko;
+  text-transform: uppercase;
+}
+
+.incline {
+  background-color: #eec000;
+}
+
+.img-container-board {
+  width: 130px;
+  overflow: hidden;
+}
+
+.img-container-maps {
+  width: 40px;
+  overflow: hidden;
+}
+
+#description {
+  text-align: center;
+  padding: 0px 25px;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+
+  color: black;
+}
+
+#star-icons {
+  align-self: center;
+  color: #ddd;
+}
+
+.checked {
+  color: #007dff;
+}
+/*media queries*/
+
+@media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 768px) {
+    .content-section {
+      margin: 0 5vw;
+      margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .content-section {
+      flex-direction: row;
+      padding: 0;
+      margin: 0 7vw;
+      margin-bottom: 50px;
+      align-items: flex-start;
+  }
+
+  .img-section {
+    flex-basis: 55%;
+  }
+
+  .spot-details {
+    flex-basis: 45%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+}

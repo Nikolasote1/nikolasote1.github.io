@@ -1,0 +1,127 @@
+.top-section {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: #ffffff;
+  height: 20vh;
+  text-align: center;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 50px;
+  margin: 50px auto;
+}
+
+.form-container:hover {
+  color: black;
+  box-shadow: 0 0 10px rgba(68, 68, 68, 0.4);
+  transform: scale(1.005);
+  transition: all 0.4s ease 0s;
+}
+
+form { 
+  max-width: 80vw;
+}
+
+.input-field {
+  font-family: Teko;
+  color:black;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  line-height: 1.5rem;
+  background-color: transparent;
+  border:3px solid black;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.input-field:focus { 
+  border-color: #007dff;
+  transition: all 0.4s ease 0s;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+#submit-button {
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  font-family: Teko;
+  background: transparent;
+  border: 3px solid black;
+  border-radius: 5px;
+  cursor:pointer;
+  color:black;
+  padding-top:10px;
+  padding-bottom:10px;
+  margin-top:-0.25rem;
+}
+
+#submit-button:hover { 
+  background: #007dff;
+  border-color: #007dff;
+  transition: all 0.4s ease 0s;
+}
+
+/*media queries*/
+
+@media screen and (min-width: 576px) {
+
+  form { 
+  max-width: 70vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+
+  form { 
+  max-width: 60vw;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+
+  form { 
+  max-width: 50vw;
+  }
+
+  .top-section {
+    background-image: url("../img/join-us-header.jpg");
+    height: 60vh;
+    background-size: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .navbar-section {
+    background: transparent;
+  }
+
+  #cover-headline {
+    color: white;
+  }
+
+}
+
+@media (min-width: 1280px) {
+
+
+}

@@ -1,0 +1,205 @@
+.top-section {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: #ffffff;
+  height: 100vh;
+  background-image: url("../img/poster_img_mobile.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background {
+  position: absolute;
+  height: auto;
+  width: 100vw;
+  z-index: -1;
+  background-color: transparent;
+  overflow: hidden;
+}
+.background {
+  display: none;
+}
+
+.navbar-section {
+   background: transparent;
+  }
+
+#bgvideo {
+  width: 100%;
+  height: auto;
+}
+
+#cover-headline {
+   color: #ffffff;
+}
+
+.title-text {
+  background-color: transparent;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  text-align: center;
+  justify-content: space-evenly;
+  margin: 5vh 5vw 15vh 5vw;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+
+a.button2 {
+  color: ffffff;
+  font-family: Teko;
+  font-weight: 400; 
+  font-size: 1.2rem;
+  text-decoration: none;
+  background: transparent;
+  text-transform: uppercase;
+  padding: 10px;
+  border: 3px solid #ffffff;
+  border-radius: 5px;
+  width: 150px;;
+  align-self: center;
+  margin-top: 20px;
+}
+
+a.button2:hover {
+  color: #ffffff;
+  background:#007dff;
+  border-color:#007dff;
+  transition: all 0.4s ease 0s;
+}
+
+a.button2:active {
+  color: #bbbbbb;
+  border-color: #bbbbbb;
+}
+
+.content-section {
+  padding-top: 0px;
+  padding-bottom: 50px;
+  background-color: white;
+}
+
+#about-caption {
+  text-align: start;
+}
+
+.about-subcaption {
+  text-align: start;
+  margin-top: 0;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+#about-tagline {
+  margin-bottom: 3rem;
+}
+
+.about-container {
+  color: black;
+  margin: 0 5vw;
+}
+
+#project-creator-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px 0 20px;
+}
+
+#portrait-niklas {
+  width: 200px;
+  height: 200px;
+}
+
+.about-item-container {
+  text-align: start;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin: 100px auto;
+  margin-bottom: 50px;
+}
+
+.about-item-container:hover {
+  box-shadow: 0 0 10px rgba(68, 68, 68, 0.4);
+  transform: scale(1.005);
+  transition: all 0.4s ease 0s;
+}
+
+
+/*media queries*/
+
+@media screen and (min-width: 576px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+  #project-creator-container {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 20px 20px 20px 0;
+  }
+
+  .cta-buttons {
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 5vw;
+  }
+
+  a.button2 {
+    margin: -0.25rem 1rem 0 1rem;
+    font-size: 1.5rem;
+    width: 200px;;
+  }
+
+  
+  .top-section {
+  background-image: url("../img/poster_img_desktop.png");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 992px) {
+
+
+.about-text {
+  font-size: 1.5rem;
+}
+
+#about-tagline {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+  #cover-headline {
+  color: white;
+  }
+
+  .top-section {
+    background: transparent;
+    height: 100vh;
+  }
+  .background {
+    display: initial;
+  }
+
+
+@media (min-width: 1280px) {
+  .top-section {
+    height: 100vh;
+  }
+}
+}
